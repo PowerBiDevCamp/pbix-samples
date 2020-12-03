@@ -1,0 +1,41 @@
+-----------------------------------------------------------------------------------
+
+let
+    Source = PowerBI.Dataflows(null),
+    TargetWorkspace = Source{[workspaceName="Wingtip Sales Model"]}[Data],
+    TargetDataFlow = TargetWorkspace{[dataflowName="Wingtip Sales Data"]}[Data],
+    Customers = TargetDataFlow{[entity="Customers"]}[Data]
+in
+    Customers
+
+------------------------------------------------------------------------------------
+
+let
+    Source = PowerBI.Dataflows(null),
+    TargetWorkspace = Source{[workspaceName="Wingtip Sales Model"]}[Data],
+    TargetDataFlow = TargetWorkspace{[dataflowName="Wingtip Sales Data"]}[Data],
+    Orders = TargetDataFlow{[entity="Orders"]}[Data]
+in
+    Orders
+
+------------------------------------------------------------------------------------
+
+let
+    Source = PowerBI.Dataflows(null),
+    TargetWorkspace = Source{[workspaceName="Wingtip Sales Model"]}[Data],
+    TargetDataFlow = TargetWorkspace{[dataflowName="Wingtip Sales Data"]}[Data],
+    Products = TargetDataFlow{[entity="Products"]}[Data]
+in
+    Products
+
+------------------------------------------------------------------------------------
+
+let
+    Source = PowerBI.Dataflows(null),
+    TargetWorkspace = Source{[workspaceName="Wingtip Sales Model"]}[Data],
+    TargetDataFlow = TargetWorkspace{[dataflowName="Wingtip Sales Data"]}[Data],
+    Sales = TargetDataFlow{[entity="Sales"]}[Data]
+in
+    Sales
+
+------------------------------------------------------------------------------------
